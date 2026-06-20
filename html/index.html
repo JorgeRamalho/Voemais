@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Voe Mais - Sua jornada começa aqui." />
+  <meta name="theme-color" content="#0A2E5C" />
+  <title>Voe Mais — Sua jornada começa aqui</title>
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --color-primary: #0A2E5C;
+      --color-primary-light: #1A5F9E;
+      --color-secondary: #4A90D9;
+      --color-accent: #F5A623;
+      --color-accent-light: #FFD700;
+      --color-sky-light: #E8F4FD;
+      --color-bg: #F5F9FC;
+      --color-surface: #FFFFFF;
+      --color-text: #1A2B3C;
+      --color-text-light: #5A6B7C;
+      --color-text-muted: #8FA0B2;
+      --color-border: #D0DCE8;
+      --color-border-light: #E5EDF5;
+      --color-success: #27AE60;
+      --color-error: #E74C3C;
+      --font-primary: 'Poppins', 'Segoe UI', sans-serif;
+      --font-secondary: 'Inter', 'Segoe UI', sans-serif;
+      --shadow-lg: 0 8px 30px rgba(10, 46, 92, 0.16);
+      --shadow-xl: 0 16px 48px rgba(10, 46, 92, 0.2);
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --gradient-primary: linear-gradient(135deg, #0A2E5C, #1A5F9E, #4A90D9);
+      --gradient-accent: linear-gradient(135deg, #F5A623, #FFD700);
+      --gradient-hero: linear-gradient(135deg, #0A2E5C 0%, #1A5F9E 40%, #4A90D9 100%);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-secondary);
+      background: var(--gradient-hero);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 2rem;
+    }
+
+    .logo-text {
+      font-family: var(--font-primary);
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .logo-text span:last-child {
+      font-weight: 300;
+      color: #7AB3E8;
+    }
+
+    h1 {
+      font-family: var(--font-primary);
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .highlight {
+      color: var(--color-accent);
+    }
+
+    p {
+      font-size: 1.125rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      font-family: var(--font-primary);
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-radius: 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      transition: all 0.3s ease;
+    }
+
+    .btn-accent {
+      background: var(--gradient-accent);
+      color: #061B36;
+      box-shadow: 0 4px 14px rgba(245,166,35,0.3);
+    }
+
+    .btn-accent:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(245,166,35,0.4);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: white;
+      border: 2px solid rgba(255,255,255,0.4);
+      margin-left: 1rem;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    .actions {
+      margin-top: 1rem;
+    }
+
+    .footer-note {
+      margin-top: 3rem;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .react-note {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: rgba(255,255,255,0.08);
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .react-note p {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .react-note code {
+      background: rgba(255,255,255,0.15);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 480px) {
+      .logo-text { font-size: 1.8rem; }
+      h1 { font-size: 1.6rem; }
+      .btn { display: block; width: 100%; margin: 0.5rem 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <svg width="50" height="50" viewBox="0 0 64 64" fill="none">
+        <circle cx="32" cy="32" r="30" fill="#4A90D9"/>
+        <path d="M32 15L26 30L20 28L18 32L26 34L26 38L30 36L32 45L34 36L38 38L38 34L46 32L44 28L38 30Z" fill="white" opacity="0.95"/>
+        <circle cx="32" cy="20" r="3" fill="#F5A623"/>
+      </svg>
+      <div class="logo-text">
+        <span>Voe</span><span>Mais</span>
+      </div>
+    </div>
+
+    <h1>🚀 Sua Jornada <span class="highlight">Começa Aqui</span></h1>
+    <p>
+      O portal Voe Mais está sendo carregado com tecnologia React + TypeScript.<br />
+      Para visualizar a versão completa, inicie o servidor de desenvolvimento.
+    </p>
+
+    <div class="actions">
+      <a href="http://localhost:5173" class="btn btn-accent">Abrir Aplicação</a>
+      <a href="https://github.com" class="btn btn-outline">Ver Projeto</a>
+    </div>
+
+    <div class="react-note">
+      <p><strong>⚡ Para executar o projeto:</strong></p>
+      <p><code>npm install</code> &nbsp;→&nbsp; <code>npm run dev</code></p>
+      <p style="margin-top: 0.5rem; font-size: 0.8rem;">
+        A aplicação será iniciada em <strong>http://localhost:5173</strong>
+      </p>
+    </div>
+
+    <div class="footer-note">
+      Voe Mais &copy; 2025 — Todos os direitos reservados
+    </div>
+  </div>
+</body>
+</html>
